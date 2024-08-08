@@ -1,9 +1,9 @@
 terraform {
   backend "s3" {
-    bucket         = "tetris-bucket"
+    bucket         = "spine-reddit-bucket-1"
     region         = "us-east-1"
-    key            = "EKS-DevSecOps-Tetris-Project/EKS-TF/terraform.tfstate"
-    dynamodb_table = "Lock-Files"
+    key            = "End-to-End-Kubernetes-DevSecOps-Tetris-Project/Jenkins-Server-TF/terraform.tfstate"
+    dynamodb_table = "terraform-lock-table"
     encrypt        = true
   }
   required_version = ">=0.13.0"
